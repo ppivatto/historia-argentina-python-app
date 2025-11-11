@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block content %}
+<h2>Agregar Nuevo Post</h2>
+<form method="POST">
+    <div class="form-group">
+        <label for="title">Título</label>
+        <input type="text" id="title" name="title" required>
+    </div>
+    <div class="form-group">
+        <label for="content">Contenido</label>
+        <textarea id="content" name="content" rows="6" required></textarea>
+    </div>
+    <button type="submit">Guardar</button>
+</form>
+{% endblock %}

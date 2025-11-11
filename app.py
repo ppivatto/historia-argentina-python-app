@@ -115,7 +115,7 @@ class HistoryHandler(SimpleHTTPRequestHandler):
             self.end_headers()
 
 
-def run_server(host: str = '0.0.0.0', port: int = 5000) -> None:
+def run_server(host: str = '0.0.0.0', port: int = 8000) -> None:
     """Run the HTTP server."""
     httpd = HTTPServer((host, port), HistoryHandler)
     print(f"Serving on http://{host}:{port}")

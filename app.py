@@ -121,6 +121,5 @@ def run_server(host: str = '0.0.0.0', port: int = 8000) -> None:
     print(f"Serving on http://{host}:{port}")
     httpd.serve_forever()
 
-
 if __name__ == '__main__':
     run_server()
